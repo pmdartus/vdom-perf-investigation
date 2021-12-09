@@ -1,0 +1,16 @@
+{
+  "name": "vnode-diff-perf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "serve": "^13.0.2"
+  }
+}
