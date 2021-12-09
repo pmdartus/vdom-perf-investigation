@@ -29,17 +29,17 @@ function vText(text) {
 // Comment vNode factory
 function vComment(text) {
   return {
+    type: COMMENT_NODE_TYPE,
     children: EMPTY_ARRAY,
     text,
-    type: COMMENT_NODE_TYPE,
   };
 }
 
 // Element vNode factory
 function vElement(tagName, children = EMPTY_ARRAY) {
   return {
-    children,
     type: ELEMENT_NODE_TYPE,
+    children,
     tagName,
   };
 }
@@ -47,9 +47,9 @@ function vElement(tagName, children = EMPTY_ARRAY) {
 // Component vNode factory
 function vComponent(ctor, children = EMPTY_ARRAY) {
   return {
-    ctor,
     type: COMPONENT_NODE_TYPE,
     children,
+    ctor,
   };
 }
 
